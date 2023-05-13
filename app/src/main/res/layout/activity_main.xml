@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@color/FontApp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="404dp"
+        android:layout_height="281dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Pour participer aux élections présidentielles vous devez disposer d'une carte d'electeur et vous etre fait enregistrer sur la plateforme!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnJaiCarte"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/btnrond"
+            android:minHeight="48dp"
+            android:text="j'ai ma carte"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            app:backgroundTint="@color/vert"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnPasCarte"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/btnrond"
+            android:text="pas de carte"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            app:backgroundTint="@color/red"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="390dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/FontApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.434">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="71dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/user" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:background="@color/Font4"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/zoneNomUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="nom d'utilisateur"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/zoneIdCarte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:hint="id carte electeur"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="255dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Connectez-vous"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/btnSeConnecter"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="235dp"
+            android:background="@drawable/btnrond"
+            android:text="se connecter"
+            android:textStyle="italic"
+            app:backgroundTint="@color/vert" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="310dp"
+            app:srcCompat="@drawable/info" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/FontApp"
+    android:layout_height="match_parent"
+    tools:context=".ActiviteUtilisateurs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="69dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="99dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user2" />
+
+        <ImageView
+            android:id="@+id/btnCreerCarte"
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHome"
+            app:srcCompat="@drawable/id_card" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listcandidats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Font4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
